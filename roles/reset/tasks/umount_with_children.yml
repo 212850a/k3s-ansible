@@ -13,4 +13,4 @@
     path: "{{ item }}"
     state: unmounted
   with_items:
-    "{{ get_mounted_filesystems.stdout_lines | reverse | list }}"
+    "{{ get_mounted_filesystems.stdout_lines }}"
